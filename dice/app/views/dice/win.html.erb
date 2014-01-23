@@ -1,0 +1,8 @@
+<h1>Dice Game</h1>
+
+<img src='<%= @diceURL+@dice.first.to_s+".png" %>' width=50 height=50>
+<img src='<%= @diceURL+@dice.last.to_s+".png" %>' width=50 height=50>
+<br>
+You rolled a <%= @sum %>
+<p>You won!</p>
+<a href="dice">Start Over</a>
