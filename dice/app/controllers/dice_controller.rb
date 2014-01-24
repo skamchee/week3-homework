@@ -17,7 +17,7 @@ class DiceController < ApplicationController
 	def first_roll
 		roll_dice
 
-		params[:goal] = @sum
+		params[:goal] = @sum.to_s
 
 		if @sum == 7 || @sum == 11
 			render "win"
@@ -33,7 +33,7 @@ class DiceController < ApplicationController
 
 		if @sum == 7
 			render "lose"
-		elsif @sum == params[:goal]
+		elsif @sum.to_s == params[:goal]
 			render "win"
 		else
 			render "roll"
