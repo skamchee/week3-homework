@@ -17,7 +17,7 @@ class DiceController < ApplicationController
 	def first_roll
 		roll_dice
 
-		session[:goal] = @sum
+		params[:goal] = @sum
 
 		if @sum == 7 || @sum == 11
 			render "win"
@@ -33,7 +33,7 @@ class DiceController < ApplicationController
 
 		if @sum == 7
 			render "lose"
-		elsif @sum == session[:goal]
+		elsif @sum == params[:goal]
 			render "win"
 		else
 			render "roll"

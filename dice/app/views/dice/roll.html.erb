@@ -10,10 +10,10 @@
 <h3>You rolled a <%= @sum %></h3>
 
 <p>
-	Your goal is <%= session[:goal] %><br>
-	Try to get <%= session[:goal] %> before you get a 7<br><br>
+	Your goal is <%= params[:goal] %><br>
+	Try to get <%= params[:goal] %> before you get a 7<br><br>
 	<button type="button" class="btn btn-default">
-		<a href="roll_n">Roll again</a>
+		<a href="/roll_n/<%=params[:goal]%>">Roll again</a>
 	</button>
 </p>
 
