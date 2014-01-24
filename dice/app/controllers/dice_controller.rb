@@ -4,7 +4,7 @@ class DiceController < ApplicationController
 		render "dice"
 	end
 
-	def roll
+	def roll_dice
 		@diceURL = "https://uchicago.s3.amazonaws.com/d0"
 		@sum = 0
 		@dice = []
@@ -14,8 +14,8 @@ class DiceController < ApplicationController
 		end
 	end
 
-	def roll_dice
-		roll
+	def first_roll
+		roll_dice
 
 		session[:goal] = @sum
 
@@ -28,8 +28,8 @@ class DiceController < ApplicationController
 		end
 	end
 
-	def goal_dice
-		roll
+	def subsequent_roll
+		roll_dice
 
 		if @sum == 7
 			render "lose"

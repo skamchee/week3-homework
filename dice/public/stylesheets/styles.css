@@ -1,0 +1,7 @@
+body { font-family: Arial, Helvetica, Verdana, sans-serif; font-style: normal; font-weight: 400; padding-top:110px; background-image: url('/assets/background.jpg');}
+h1 { font-family:  Lato, Arial, Helvetica, Verdana, sans-serif; font-style: italic; font-weight: 400; font-size: 60px; color:#FFF;}
+h2 { font-family:  Lato, Arial, Helvetica, Verdana, sans-serif; font-style: italic; font-weight: 400; font-size: 50px; color:#FFF;}
+h3 { font-family:  Lato, Arial, Helvetica, Verdana, sans-serif; font-style: italic; font-weight: 400; padding-left: 15px;}
+p { padding: 15px;}
+img.dice{width:100px; height:100px;}
+.navbar{ padding-left: 15px;}

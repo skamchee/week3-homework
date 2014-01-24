@@ -55,7 +55,7 @@ Dice::Application.routes.draw do
   #   end
 
   get("/dice", { :controller =>"dice", :action => "intro"})
-  get("/roll", { :controller =>"dice", :action => "roll_dice"})
-  get("/goal", { :controller =>"dice", :action => "goal_dice"})
+  get("/roll_one", { :controller =>"dice", :action => "first_roll"})
+  get("/roll_n", { :controller =>"dice", :action => "subsequent_roll"})
 
 end
